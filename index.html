@@ -704,6 +704,14 @@ function setupTabs(listId, panelClass) {
       document.querySelectorAll('.' + panelClass).forEach(panel => {
         panel.classList.toggle('is-active', panel.id === targetId);
       });
+      // model-viewer は display:none 中に初期化されないため、表示後に resize を発火して再レンダリング
+      const activePanel = document.getElementById(targetId);
+      if (activePanel) {
+        activePanel.querySelectorAll('model-viewer').forEach(mv => {
+          mv.dispatchEvent(new CustomEvent('model-visibility', { detail: { visible: true } }));
+        });
+        window.dispatchEvent(new Event('resize'));
+      }
     });
   });
 }

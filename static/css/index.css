@@ -144,12 +144,32 @@ body {
   color: #fff;
 }
 
-/* Comparison panels */
-.comparison-panel { display: none; }
-.comparison-panel.is-active { display: block; }
+/* Comparison panels — visibility:hidden+height:0 で model-viewer を常に初期化状態に保つ */
+.comparison-panel {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.comparison-panel.is-active {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  pointer-events: auto;
+}
 
-.real-comparison { display: none; }
-.real-comparison.is-active { display: block; }
+.real-comparison {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.real-comparison.is-active {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  pointer-events: auto;
+}
 
 /* Horizontally scrollable comparison row */
 .comparison-scroll {
