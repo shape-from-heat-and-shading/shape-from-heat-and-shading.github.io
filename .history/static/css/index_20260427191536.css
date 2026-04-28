@@ -1,0 +1,282 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.teaser-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.teaser-crop {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.teaser-video {
+  width: 100%;
+  display: block;
+  /* 上下のトリミング量はここで調整 */
+  margin-top: -20%;
+  margin-bottom: -0%;
+}
+
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.venue-badge {
+  display: inline-block;
+  background: #c0392b;
+  color: #fff;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+.venue-sub {
+  font-size: 0.88rem;
+  color: #666;
+  margin-left: 0.4rem;
+}
+
+/* Method label badges — the key visual idea */
+.method-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-family: 'Google Sans', sans-serif;
+  white-space: nowrap;
+}
+
+.label-input { background: #f0f0f0; color: #555; }
+.label-sfs   { background: #fdecea; color: #c0392b; border: 1px solid #e74c3c; }
+.label-sfl   { background: #fef9e7; color: #b7770d; border: 1px solid #f1c40f; }
+.label-abs   { background: #f5eef8; color: #7d3c98; border: 1px solid #9b59b6; }
+.label-ours  { background: #eafaf1; color: #1e8449; border: 2px solid #27ae60; }
+.label-gt    { background: #eaf0fb; color: #1a5276; border: 1px solid #2980b9; }
+.label-sfhc  { background: #fef6e9; color: #ca6f1e; border: 1px solid #e59866; }
+
+/* Object selector tabs */
+.object-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.object-tab-btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.3rem 0.85rem;
+  cursor: pointer;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #444;
+  transition: background 0.15s;
+}
+
+.object-tab-btn:hover {
+  background: #e8e8e8;
+}
+
+.object-tab-btn.is-active {
+  background: #363636;
+  border-color: #363636;
+  color: #fff;
+}
+
+/* Comparison panels */
+.comparison-panel { display: none; }
+.comparison-panel.is-active { display: block; }
+
+.real-comparison { display: none; }
+.real-comparison.is-active { display: block; }
+
+.ablation-panel { display: none; }
+.ablation-panel.is-active { display: block; }
+
+/* Horizontally scrollable comparison row */
+.comparison-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+  display: flex;
+  gap: 6px;
+  min-width: 660px;
+  padding-bottom: 4px;
+}
+
+.comparison-col {
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison-col img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* 3D model viewer */
+.model-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.model-card {
+  flex: 1;
+  min-width: 150px;
+  max-width: 230px;
+  text-align: center;
+}
+
+.model-card model-viewer {
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.model-card.is-ours {
+  outline: 2px solid #27ae60;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+/* Real-world result layout */
+.real-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.real-col {
+  flex: 1;
+  min-width: 140px;
+  max-width: 280px;
+  text-align: center;
+}
+
+.real-col img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Ablation grid */
+.ablation-grid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ablation-col {
+  flex: 1;
+  min-width: 110px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.ablation-col img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.ablation-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #555;
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+/* BibTeX block */
+.bibtex-block {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  font-family: monospace;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  overflow-x: auto;
+  color: #333;
+}
+
+.publication-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.publication-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.eql-cntrb {
+  font-size: smaller;
+}
