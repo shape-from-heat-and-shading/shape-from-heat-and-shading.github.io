@@ -212,14 +212,14 @@
     </div>
 
     <!-- Method legend -->
-    <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:0.75rem; align-items:center;">
+    <!-- <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:0.75rem; align-items:center;">
       <span style="font-size:0.78rem; color:#888; margin-right:2px;">Methods:</span>
       <span class="method-label label-input">Shading</span>
       <span class="method-label label-input">Laplacian</span>
       <span class="method-label label-sfs">SfS</span>
       <span class="method-label label-sfl">SfL</span>
       <span class="method-label label-ours">Ours (SFLS)</span>
-    </div>
+    </div> -->
 
     <!-- ARMADILLO -->
     <div class="comparison-panel is-active" id="sim-armadillo">
@@ -235,15 +235,15 @@
           </div>
           <div class="comparison-col">
             <span class="method-label label-sfs">SfS</span>
-            <img src="static/images/sim/sfs/main-baseline-sfs-armadillo.png" alt="SfS">
+            <model-viewer style="width:100%;height:200px;" src="static/models/armadillo_SFS.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="comparison-col">
             <span class="method-label label-sfl">SfL</span>
-            <img src="static/images/sim/sfl/main-baseline-sfl-armadillo.png" alt="SfL">
+            <model-viewer style="width:100%;height:200px;" src="static/models/armadillo_SFL.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="comparison-col">
             <span class="method-label label-ours">Ours (SFLS)</span>
-            <img src="static/images/sim/rendered/main-sfls-almadillo.png" alt="SFLS">
+            <model-viewer style="width:100%;height:200px;" src="static/models/armadillo.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -347,15 +347,15 @@
           </div>
           <div class="comparison-col">
             <span class="method-label label-sfs">SfS</span>
-            <img src="static/images/sim/sfs/main-baseline-sfs-spot.png" alt="SfS">
+            <model-viewer style="width:100%;height:200px;" src="static/models/spot_SFS.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="comparison-col">
             <span class="method-label label-sfl">SfL</span>
-            <img src="static/images/sim/sfl/main-baseline-sfl-spot.png" alt="SfL">
+            <model-viewer style="width:100%;height:200px;" src="static/models/spot_SFL.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="comparison-col">
             <span class="method-label label-ours">Ours (SFLS)</span>
-            <img src="static/images/sim/rendered/main-sfls-spot.png" alt="SFLS">
+            <model-viewer style="width:100%;height:200px;" src="static/models/spot.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -415,22 +415,22 @@
         </ul>
       </div>
 
-      <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:0.75rem; align-items:center;">
+      <!-- <div style="display:flex; gap:5px; flex-wrap:wrap; margin-bottom:0.75rem; align-items:center;">
         <span style="font-size:0.78rem; color:#888; margin-right:2px;">Methods:</span>
         <span class="method-label label-sfhc">SFHC (Baseline)</span>
         <span class="method-label label-ours">Ours (SFLS)</span>
-      </div>
+      </div> -->
 
       <!-- BEAR -->
       <div class="real-comparison is-active" id="real-bear">
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-bear.png" alt="SFHC Bear">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_bear_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-bear.png" alt="SFLS Bear">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_bear.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -440,11 +440,11 @@
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-bunny.png" alt="SFHC Bunny">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_bunny_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-bunny.png" alt="SFLS Bunny">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_bunny.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -454,11 +454,11 @@
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-droplet.png" alt="SFHC Droplet">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_droplet_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-droplet.png" alt="SFLS Droplet">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_droplet.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -468,11 +468,11 @@
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-heart.png" alt="SFHC Heart">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_heart_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-heart.png" alt="SFLS Heart">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_heart.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -482,11 +482,11 @@
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-sodacan.png" alt="SFHC Soda Can">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_soda_can_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-sodacan.png" alt="SFLS Soda Can">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_soda_can.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -496,11 +496,11 @@
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-sphere.png" alt="SFHC Sphere">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_sphere_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-sphere.png" alt="SFLS Sphere">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_sphere.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
@@ -510,16 +510,15 @@
         <div class="real-row">
           <div class="real-col">
             <span class="method-label label-sfhc">SFHC (Baseline)</span><br>
-            <img src="static/images/real/sfhc/sfhc-paintedbear.png" alt="SFHC Painted Bear">
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_painted_bear_SFHC.glb" camera-controls auto-rotate></model-viewer>
           </div>
           <div class="real-col">
             <span class="method-label label-ours">Ours (SFLS)</span><br>
-            <img src="static/images/real/sfls/sfls-paintedbear.png" alt="SFLS Painted Bear">
-            <p style="font-size:0.78rem; color:#888; margin-top:4px;">Non-uniform (painted) albedo</p>
+            <model-viewer style="width:100%;height:360px;" src="static/models/real_painted_bear.glb" camera-controls auto-rotate></model-viewer>
           </div>
         </div>
       </div>
-
+      
   </div>
 </section>
 
